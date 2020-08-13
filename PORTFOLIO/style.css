@@ -1,0 +1,899 @@
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	margin: 0 0 50px 0;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	filter: drop-shadow(0 0 10px black);
+	background-image: linear-gradient(to right, dimgray, black, dimgray, black);
+	display: flex;
+	overflow-x: auto;
+	z-index: 5;
+}
+
+.nav__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	min-width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: sans-serif;
+	font-size: 13px;
+	color: #FF0000;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 0.1s ease-in-out;
+	filter: drop-shadow(0 0 10px #000000);
+}
+
+.nav__link:hover {
+	background-color: #FF0000;
+	color: white;
+}
+
+.nav__link--active {
+	background-color: #FF0000;
+	color: #000000;
+}
+
+.nav__link--active:hover {
+	filter: drop-shadow(5px 5px 20px white);
+	color: #FF0000;
+	background-color: #000000;
+	z-index: 2;
+}
+
+.nav__icon {
+	font-size: 18px;
+}
+
+.loc_icon {
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-top: 140px;
+	margin-left: 125px;
+	display: flex;
+	white-space: nowrap;
+}
+
+.location {
+	font-family: 'Crimson Text', serif;
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 20px;
+	color: white;
+	margin-top: -30px;
+	margin-left: 150px;
+	display: flex;
+}
+
+.business {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin-left: 150px;
+	margin-top: 110px;
+	z-index: 2;
+	filter: drop-shadow(0 0 3px gray);
+	position: absolute;
+}
+
+.business_icon {
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-left: 125px;
+	margin-top: 110px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.work_icon {
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-top: 85px;
+	margin-left: 125px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+
+
+/*--------------------END OF NAVIGATION BAR--------------------*/
+
+body {
+	background-image: url("BG1.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
+#JK {
+	filter: drop-shadow(5px 5px 10px red);
+	z-index: 4;
+	position: absolute;
+	margin-left: 500px;
+}
+
+#Profile {
+	background-image: url("BG.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 5px red);
+	width: 990px;
+	height: 500px;
+	z-index: 1;
+	position: relative;
+	margin-top: 70px;
+}
+
+h1 {
+	font-family: 'Crimson Text', serif;
+	font-size: 30px;
+	color: red;
+	filter: drop-shadow(0 0 10px gray);
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+
+.work {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	z-index: 2;
+	filter: drop-shadow(0 0 3px gray);
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 85px;
+}
+
+.ability {
+	margin-left: 100px;
+	margin-top: 30px;
+	display: block;
+	position: absolute;
+}
+
+li {
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: white;
+	list-style-type: none;
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;
+}
+
+progress {
+	width: 200px;
+	height: 20px;
+	color: red;
+	background: #000000;
+}
+
+progress::-webkit-progress-bar {
+	background: #FFFFFF;
+	filter: drop-shadow(0 0 3px gray);
+}
+
+progress::-webkit-progress-value {
+	background: #FF0000;
+}
+
+#Biography {
+	background-image: url(desc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 5px red);
+	display: block;
+	position: absolute;
+	width: 990px;
+	height: 200px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#Biography .name_bio {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin-top: 40px;
+	margin-left: 40px;
+	text-align: justify;
+}
+
+#Biography .bio {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin-top: 10px;
+	text-align: justify;
+	margin-left: 40px;
+}
+
+#Achievements {
+	margin-top: 250px;
+	width: 990px;
+	height: 900px;
+	background-image: url(BG1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 8px red);
+	display: block;
+	position: relative;
+}
+
+.container h2 {
+	font-family: 'Crimson Text', serif;
+	font-size: 40px;
+	color: white;
+	text-align: justify;
+	margin-left: 400px;
+	filter: drop-shadow(0 0 5px red);
+}
+
+#pic-achievements {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: absolute;
+}
+
+#pic-achievements .item1 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-left: 100px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item2 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-left: 100px;
+	margin-top: 250px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item3 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-top: 500px;
+	margin-left: 100px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item4 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-left: 500px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item5 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-top: 250px;
+	margin-left: 500px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item6 {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	margin-top: 500px;
+	margin-left: 500px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1
+}
+
+#pic-achievements .item1:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#pic-achievements .item2:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#pic-achievements .item3:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#pic-achievements .item4:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+	float: right;
+}
+
+#pic-achievements .item5:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+	float: right;
+}
+
+#pic-achievements .item6:hover {
+	width: 40%;
+	height: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.3);
+	float: right;
+}
+
+#Contact {
+	width: 990px;
+	height: auto;
+	background-image: url(LBG.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 8px red);
+	margin-top: 30px;
+	display: block;
+	position: relative;
+}
+
+#Contact .contacts li a {
+	text-decoration: none;
+}
+
+.number_icon {
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.fb_icon {
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.email_icon {
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.number {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin: 10px;
+	margin-top: 20px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+
+.fb {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin: 10px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+
+.email {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin: 10px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	color: red;
+	text-align: center;
+	border-top: 5px solid red;
+}
+
+.footer-content {
+	position: absolute;
+	background-color: black;
+	color: red;
+	width: 100%;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+}
+
+.footer-content a {
+	text-decoration: none;
+	color: gray;
+	font-size: 20px;
+}
+
+
+/*--------------------ANDROID PLATFORM--------------------*/
+
+@media screen and (max-width: 720px){
+	html{
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+nav {
+    margin: 0 0 0 0;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 355px;
+    height: 50px;
+    filter: drop-shadow(0 0 10px black);
+    background-image: linear-gradient(to right, dimgray, black, dimgray, white);
+    display: flex;
+    overflow-x: auto;
+    z-index: 5;
+
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #FF0000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    filter: drop-shadow(0 0 10px #000000);
+}
+
+.nav__link:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+.nav__link--active {
+	background-color: 	#FF0000;
+    color: #000000;
+}
+.nav__link--active:hover{
+	filter: drop-shadow(5px 5px 20px white);
+	color: 	#FF0000;
+	background-color: #000000;
+	z-index: 2;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+.loc_icon{
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-top: 542px;
+	margin-left: 75px;
+	display: flex;
+	white-space: nowrap;
+}
+.location{
+	font-family: 'Crimson Text', serif;
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 20px;
+	color: white;
+	margin-top: -30px;
+	margin-left: 100px;
+	display: flex;
+}
+.business{
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin-left: 60px;
+	margin-top: 520px;
+	z-index: 2;
+	filter: drop-shadow(0 0 3px gray);
+	position: absolute;
+}
+.business_icon{
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-left: 35px;
+	margin-top: 520px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+.work_icon{
+	filter: drop-shadow(0 0 3px gray);
+	font-size: 18px;
+	color: white;
+	margin-top: 500px;
+	margin-left: 95px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+/*--------------------END OF NAVIGATION BAR--------------------*/
+body{
+	background-image: url("BG1.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: auto;
+	width: 100%;
+}
+
+#JK{
+ filter: drop-shadow(5px 5px 10px white);
+ z-index: 4;
+ display: block;
+ position: absolute;
+ margin-left: -55px;
+ margin-top: 20px;
+ width: 400px;
+}
+
+#Profile{
+	background-image: url("BG.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 5px red);
+	width: 340px;
+	height: 900px;
+	z-index: 1;
+	position: relative;
+	margin-top: 70px;
+}
+
+h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 28px;
+	color: red;
+	filter: drop-shadow(0 0 10px gray);
+	position: absolute;
+	margin-left: 35px;
+	margin-top: 450px;
+}
+
+.work{
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	z-index: 2;
+	filter: drop-shadow(0 0 3px gray);
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 500px;
+}
+.ability{
+	margin-left: 30px;
+	margin-top: 30px;
+	display: block;
+	position: absolute;
+}
+li {
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: white;
+	list-style-type: none;
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;
+}
+progress {
+	width: 200px;
+	height: 20px;
+	color: red;
+	background: #000000;
+}
+progress::-webkit-progress-bar {
+	background: #FFFFFF;
+	filter: drop-shadow(0 0 3px gray);
+}
+progress::-webkit-progress-value {
+    background: #FF0000;
+	
+}
+
+#Biography{
+  background-image: url(desc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 5px red);
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 300px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#Biography .name_bio{
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	color: white;
+	margin-top: 40px;
+	margin-left: 40px;
+	text-align: justify;
+}
+#Biography .bio{
+	font-family: 'Crimson Text', serif;
+	font-size: 17px;
+	color: white;
+	margin-top: 10px;
+	text-align: justify;
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+#Achievements{
+	margin-top: 340px;
+	padding-bottom: 1300px;
+	width: 340px;
+	height: auto;
+	background-image: url(BG1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 8px red);
+	display: block;
+	position: relative;
+}
+.items{
+    margin-top: -20px;
+}
+.container .ach{
+	font-family: 'Crimson Text', serif;
+	font-size: 40px;
+	color: white;
+	text-align: justify;
+	margin-left: 50px;
+    margin-top: 100px;
+	filter: drop-shadow(0 0 5px red);
+}
+#pic-achievements{
+	width: 300px;
+	height: auto;
+	display: block;
+	position: absolute;
+}
+#pic-achievements .item1{
+	width: 280px;
+	height: auto;
+	margin-left: -10px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#pic-achievements .item2{
+	width: 280px;
+	height: auto;
+	margin-left: -10px;
+	margin-top: 220px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#pic-achievements .item3{
+	width: 280px;
+	height: auto;
+	margin-top: 440px;
+	margin-left: -10px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+#pic-achievements .item4{
+	width: 280px;
+	height: auto;
+    margin-left: -10px;
+    margin-top: 660px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#pic-achievements .item5{
+	width: 280px;
+	height: auto;
+	margin-top: 880px;
+	margin-left: -10px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#pic-achievements .item6{
+	width: 280px;
+	height: auto;
+
+	margin-top: 1100px;
+	margin-left: -10px;
+	filter: drop-shadow(0 0 5px white);
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#Contact{
+	width: 340px;
+	height: 150px;
+	background-image: url(LBG.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 8px red);
+	margin-top: 20px;
+	display: block;
+	position: absolute;
+    z-index: 99;
+}
+.contacts li a{
+	text-decoration: none;
+}
+.number_icon{
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+.fb_icon{
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+.email_icon{
+	filter: drop-shadow(0 0 3px white);
+	font-size: 18px;
+	color: white;
+	margin-left: -20px;
+	margin-top: 5px;
+	display: flex;
+	position: absolute;
+	white-space: nowrap;
+}
+.number{
+	font-family: 'Crimson Text', serif;
+	font-size: 15px;
+	color: white;
+	margin: 10px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+.fb{
+	font-family: 'Crimson Text', serif;
+	font-size: 15px;
+	color: white;
+	margin: 10px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+
+.email{
+	font-family: 'Crimson Text', serif;
+	font-size: 15px;
+	color: white;
+	margin: 10px;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 3px gray);
+	background-color: black;
+}
+
+.footer{
+  position: relative;
+  margin-top: 200px;
+  width: 340px;
+  height: 150px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  border-top: 5px solid red;
+  z-index: 99; 
+}
+.footer-content{
+  position: absolute;
+  background-color: black;
+  color: red;
+  width: 100%;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+.footer-content a{
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+}
