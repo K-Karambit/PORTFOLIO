@@ -3,8 +3,17 @@ html {
     background-color: #18191A;
     padding: 0px;
     margin: 0px;  
-    width: auto;
-    height: 1900px; 
+    width: 100%;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
 }
 nav {
     position: fixed;
@@ -129,13 +138,13 @@ nav {
 }
 
 #links {
-    margin: 20px 0 0 500px;     
+    margin: 20px 0 0 500px;    
 }
 #links a{
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 130%;
     color: #d4d5d9;
-    margin: 0px 0 0px 50px;
+    margin: 0 0 0 50px;
     text-decoration: none;
 }
 
@@ -168,18 +177,15 @@ li {
     margin: 0 0 20px 200px; 
 }
 
-h1 {   
-    margin: 0 0 0 50px;
-}
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 75%;
     color: #d4d5d9;
     margin: 20px 0 0 50px;
 }
 h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-size: 57%;
     color: #d4d5d9;
     margin: 20px 0 0 50px;
 }
@@ -187,7 +193,7 @@ h3 {
 #Name {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 120%;
     margin: 80px 0 0 50px; 
     -webkit-text-fill-color: #007500;
     -webkit-animation: Gradient 20s ease infinite;
@@ -195,33 +201,36 @@ h3 {
 }
 #PictureKo {
     margin: 120px 0 0 500px;
+    right: 0;
+    position: relative;
     padding: auto;
-    width: 500px;
-    height: 500px;
+    width: 40%;
+    height: 22%;
     filter: drop-shadow(0 0 1px white);
 	z-index: 5;
 	position: absolute;
     opacity: 0.8;
 }
 
-Footer {
-    position: static;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background-image: linear-gradient(to left, #18191A 10%, #18191A 90%);
-    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
-	display: block;
-    margin: 0,0,0,0;
-    padding: 0;	
-    z-index: 1;
-}
 #Footer {
+    margin: 5em 0 0 0;
     text-align: center;
-    background-image: linear-gradient(to left, transparent 0%, #FF4B2B 100%);   
+    background-image: linear-gradient(to left, green 10%, darkgreen 90%);   
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
     font-family: 'Comfortaa', cursive;
-    z-index: 5;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    padding: 0 0 5em 0;
+    background-color: #111011; 
+    bottom: 0;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    border-top: #055e06 5px solid;
 }
